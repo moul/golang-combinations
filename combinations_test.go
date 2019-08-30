@@ -84,3 +84,10 @@ func ExampleAll() {
 	// Output:
 	// [[A] [B] [A B] [C] [A C] [B C] [A B C]]
 }
+
+func ExampleAll_big() {
+	combinations := All([]string{"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T"})
+	fmt.Println(len(combinations))
+	// Output:
+	// 32767
+}
